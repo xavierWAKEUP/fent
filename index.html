@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Intro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            color: white;
+            flex-direction: column;
+        }
+
+        #introGIF {
+            width: 300px; /* Adjust the size based on your GIF */
+            height: auto;
+        }
+
+        .enter-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6347; /* Customize your button color */
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .enter-button:hover {
+            background-color: #ff4500; /* Color change on hover */
+        }
+
+        .enter-button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GIF Section -->
+    <img id="introGIF" src="c.gif" alt="Intro GIF">
+
+    <!-- Enter Button -->
+    <button class="enter-button" onclick="enterSite()">Enter</button>
+
+    <script>
+        function enterSite() {
+            window.location.href = "main.html"; // Redirect to your main website page
+        }
+    </script>
+
+</body>
+</html>
